@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "f616d0ff-b311-4c9a-82db-5446fc238069",
+		"name": "Web Terminal API",
+		"description": "Collection of all API endpoints for the Web Terminal project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34957662"
+	},
+	"item": [
+		{
+			"name": "Author Routes",
+			"item": [
+				{
+					"name": "Get All Authors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/authors"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/authors/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"authors",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Author",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Author Name\", \"birthdate\": \"1990-01-01\", \"nationality\": \"Country\"}"
+						},
+						"url": "localhost:3000/api/authors"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Updated Author Name\", \"birthdate\": \"1991-01-01\", \"nationality\": \"New Country\"}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/authors/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"authors",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Author",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/authors/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"authors",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Borrower Routes",
+			"item": [
+				{
+					"name": "Get All Borrowers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/borrowers"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Borrower by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/borrowers/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Borrower",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Borrower Name\", \"email\": \"borrower@example.com\", \"phone\": \"1234567890\", \"address\": \"123 Borrower Street\"}"
+						},
+						"url": "localhost:3000/api/borrowers"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Borrower",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Updated Borrower Name\", \"email\": \"updatedborrower@example.com\", \"phone\": \"0987654321\", \"address\": \"456 Borrower Avenue\"}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/borrowers/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Borrower",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/borrowers/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Borrowing Routes",
+			"item": [
+				{
+					"name": "Get All Borrowings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/api/borrowings"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Borrowing by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/borrowings/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Borrowing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"borrower\": \"borrowerId\", \"author\": \"authorId\", \"bookTitle\": \"The Great Book\", \"borrowDate\": \"2024-12-25\", \"returnDate\": \"2025-01-25\"}"
+						},
+						"url": "localhost:3000/api/borrowings"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Borrowing",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"borrower\": \"updatedBorrowerId\", \"author\": \"updatedAuthorId\", \"bookTitle\": \"Updated Great Book\", \"borrowDate\": \"2024-12-26\", \"returnDate\": \"2025-02-01\"}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/borrowings/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Borrowing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/borrowings/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"borrowings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
